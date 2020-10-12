@@ -1,0 +1,26 @@
+div {
+    background-color: green;
+    height: 100px;
+    width: 100px;
+
+    animation: changeBackground .5s ease infinite;
+}
+
+@keyframes changeBackground {
+    0% {
+        background-color: green;
+        width: 150px;
+    }
+    50% {
+        background-color: red;
+        width: 300px;
+    }
+    100% {
+        background-color: green;
+        width: 150px;
+    }
+}
+
+div:hover {
+    background-color: red;
+}
